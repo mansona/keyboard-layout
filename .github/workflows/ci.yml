@@ -8,6 +8,7 @@ env:
 jobs:
   Test:
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         node-version: [12, 14, 16]
